@@ -26,6 +26,8 @@ hr { color: rgba(0, 0, 0, 0.95); width: 100%; }
 
 nav { height: 5vh; width: 84vw; top: 5vh; }
 
+@media only screen and (max-width: 60em) { nav { width: 100%; } }
+
 nav ul { display: flex; flex-direction: row; justify-content: flex-end; }
 
 nav ul li { list-style: none; padding: 0 2vw; }
@@ -40,7 +42,7 @@ nav ul li a:hover { color: blue; }
 
 .case-studies .case-study { text-decoration: none; color: inherit; flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 4rem; }
 
-@media only screen and (max-width: 60em) { .case-studies .case-study { padding: 2rem; } }
+@media only screen and (max-width: 60em) { .case-studies .case-study { padding: 2rem 0; } }
 
 .case-studies a { text-decoration: none; color: inherit; flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 4rem; }
 
@@ -70,11 +72,13 @@ nav ul li a:hover { color: blue; }
 
 footer { color: rgba(0, 0, 0, 0.35); padding: 5vh 8vw; text-align: center; }
 
+@media only screen and (max-width: 60em) { footer { padding: 5vh 0; } }
+
 form { display: flex; flex-direction: column; width: 100%; }
 
 form label { color: rgba(0, 0, 0, 0.65); font-size: 0.8rem; }
 
-form input[type=text], form input[type=email], form textarea { font-family: 'Inter', sans-serif; color: rgba(0, 0, 0, 0.35); border: none; border-bottom: 1px solid rgba(0, 0, 0, 0.05); font-size: 1rem; line-height: 2rem; margin: 1rem; }
+form input[type=text], form input[type=email], form textarea { font-family: 'Inter', sans-serif; color: rgba(0, 0, 0, 0.35); border: none; border-bottom: 1px solid rgba(0, 0, 0, 0.05); font-size: 1rem; line-height: 2rem; margin: 1rem; margin-left: 0; }
 
 form input[type=text]:focus, form input[type=email]:focus, form textarea:focus { color: rgba(0, 0, 0, 0.95); border: none; border-bottom: 1px solid rgba(0, 0, 0, 0.65); }
 
