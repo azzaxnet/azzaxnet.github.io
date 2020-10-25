@@ -28,7 +28,7 @@ nav { height: 5vh; width: 84vw; top: 5vh; }
 
 nav ul { display: flex; flex-direction: row; justify-content: flex-end; padding-left: 0; }
 
-@media only screen and (max-width: 60em) { nav ul { justify-content: space-around; } }
+@media only screen and (max-width: 60em) { nav ul { justify-content: space-between; } }
 
 nav ul li { list-style: none; padding: 0 2vw; }
 
