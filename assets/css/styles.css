@@ -1,6 +1,6 @@
 h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; }
 
-h1 { font-size: 6vh; line-height: 1.66; margin-bottom: 15vh; margin-top: 30vh; background: linear-gradient(90deg, #1565C0, #b92b27); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+h1 { font-size: 6vh; line-height: 1.66; margin-bottom: 15vh; margin-top: 30vh; background: linear-gradient(90deg, #1565C0, #b92b27); -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: gradient 10s ease infinite; background-size: 200% 200%; }
 
 h2 { font-size: 2rem; margin-bottom: 0; padding-top: 5vh; }
 
@@ -21,6 +21,10 @@ a:hover { color: #b92b27; }
 @keyframes slideInFromLeft { 0% { transform: translateX(-150%); }
   100% { transform: translateX(0); } }
 
+@keyframes gradient { 0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; } }
+
 body { font-family: 'Inter', sans-serif; font-size: 16px; display: flex; flex-direction: column; padding: 0 8vw; color: rgba(0, 0, 0, 0.95); }
 
 @media only screen and (max-width: 60em) { body { padding: 0 18px; } }
@@ -29,7 +33,7 @@ header { width: 60%; }
 
 @media only screen and (max-width: 60em) { header { width: 100%; } }
 
-hr { background: linear-gradient(90deg, #1565C0, #b92b27); height: 2px; width: 100%; border: 0; }
+hr { background: linear-gradient(90deg, #1565C0, #b92b27); height: 2px; width: 100%; border: 0; animation: gradient 10s ease infinite; background-size: 200% 200%; }
 
 nav { height: 5vh; width: 84vw; }
 
@@ -41,7 +45,7 @@ nav ul li { list-style: none; padding: 0 2vw; }
 
 @media only screen and (max-width: 60em) { nav ul li { padding: 0; } }
 
-nav ul li a { color: #1565C0; }
+nav ul li a { color: rgba(0, 0, 0, 0.95); }
 
 nav ul li a:hover { color: #b92b27; }
 
@@ -93,7 +97,7 @@ form input[type=text], form input[type=email], form textarea { font-family: 'Int
 
 form input[type=text]:focus, form input[type=email]:focus, form textarea:focus { color: rgba(0, 0, 0, 0.95); border: none; border-bottom: 1px solid rgba(0, 0, 0, 0.65); }
 
-form button { color: #fff; background: #1565C0; background: linear-gradient(90deg, #1565C0, #b92b27); font-size: 1rem; line-height: 1.5rem; padding: 0.75rem 1.15rem; border: none; border-radius: 3px; width: 40%; align-self: center; transition: background 2s ease-in-out; }
+form button { color: #fff; background: #1565C0; background: linear-gradient(90deg, #1565C0, #b92b27); font-size: 1rem; line-height: 1.5rem; padding: 0.75rem 1.15rem; border: none; border-radius: 3px; width: 40%; align-self: center; transition: background 2s ease-in-out; animation: gradient 10s ease infinite; background-size: 200% 200%; }
 
 form button:hover { background: linear-gradient(90deg, #b92b27, #b92b27); border: none; color: #fff; cursor: pointer; }
 
