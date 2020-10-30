@@ -1,6 +1,6 @@
 h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; }
 
-h1 { font-size: 6vh; line-height: 1.66; margin-bottom: 15vh; margin-top: 30vh; }
+h1 { font-size: 6vh; line-height: 1.66; margin-bottom: 15vh; margin-top: 30vh; background: linear-gradient(90deg, #1565C0, #b92b27); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
 h2 { font-size: 2rem; margin-bottom: 0; padding-top: 5vh; }
 
@@ -14,6 +14,13 @@ h4 + .images p { margin-top: 1rem; }
 
 p { color: rgba(0, 0, 0, 0.65); line-height: 1.66; }
 
+a { color: #1565C0; transition: color .1s ease-in-out; }
+
+a:hover { color: #b92b27; }
+
+@keyframes slideInFromLeft { 0% { transform: translateX(-150%); }
+  100% { transform: translateX(0); } }
+
 body { font-family: 'Inter', sans-serif; font-size: 16px; display: flex; flex-direction: column; padding: 0 8vw; color: rgba(0, 0, 0, 0.95); }
 
 @media only screen and (max-width: 60em) { body { padding: 0 18px; } }
@@ -22,9 +29,9 @@ header { width: 60%; }
 
 @media only screen and (max-width: 60em) { header { width: 100%; } }
 
-hr { color: rgba(0, 0, 0, 0.95); width: 100%; }
+hr { background: linear-gradient(90deg, #1565C0, #b92b27); height: 2px; width: 100%; border: 0; }
 
-nav { height: 5vh; width: 84vw; top: 5vh; }
+nav { height: 5vh; width: 84vw; }
 
 nav ul { display: flex; flex-direction: row; justify-content: flex-end; padding-left: 0; }
 
@@ -34,9 +41,9 @@ nav ul li { list-style: none; padding: 0 2vw; }
 
 @media only screen and (max-width: 60em) { nav ul li { padding: 0; } }
 
-nav ul li a { color: inherit; }
+nav ul li a { color: #1565C0; }
 
-nav ul li a:hover { color: blue; }
+nav ul li a:hover { color: #b92b27; }
 
 .case-studies { flex-direction: row; display: flex; }
 
@@ -46,7 +53,7 @@ nav ul li a:hover { color: blue; }
 
 @media only screen and (max-width: 60em) { .case-studies .case-study { padding: 2rem 0; } }
 
-.case-studies a { text-decoration: none; color: inherit; flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 4rem; }
+.case-studies a { text-decoration: none; color: inherit; flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 4rem; transition: background .1s ease-in-out; }
 
 .case-studies a:hover { background: rgba(0, 0, 0, 0.02); }
 
@@ -82,12 +89,12 @@ form { display: flex; flex-direction: column; width: 100%; }
 
 form label { color: rgba(0, 0, 0, 0.65); font-size: 0.8rem; }
 
-form input[type=text], form input[type=email], form textarea { font-family: 'Inter', sans-serif; color: rgba(0, 0, 0, 0.35); border: none; border-bottom: 1px solid rgba(0, 0, 0, 0.05); font-size: 1rem; line-height: 2rem; margin: 1rem; margin-left: 0; }
+form input[type=text], form input[type=email], form textarea { font-family: 'Inter', sans-serif; color: rgba(0, 0, 0, 0.35); border: none; border-bottom: 1px solid rgba(0, 0, 0, 0.05); font-size: 1rem; line-height: 2rem; margin: 1rem; margin-left: 0; transition: all .2s ease-in-out; }
 
 form input[type=text]:focus, form input[type=email]:focus, form textarea:focus { color: rgba(0, 0, 0, 0.95); border: none; border-bottom: 1px solid rgba(0, 0, 0, 0.65); }
 
-form button { background: #fff; color: rgba(0, 0, 0, 0.95); font-size: 1rem; line-height: 1.5rem; padding: 0.75rem 1.15rem; border: 1px solid rgba(0, 0, 0, 0.95); border-radius: 3px; width: 40%; align-self: center; }
+form button { color: #fff; background: #1565C0; background: linear-gradient(90deg, #1565C0, #b92b27); font-size: 1rem; line-height: 1.5rem; padding: 0.75rem 1.15rem; border: none; border-radius: 3px; width: 40%; align-self: center; transition: background 2s ease-in-out; }
 
-form button:hover { background: rgba(0, 0, 0, 0.95); color: #fff; cursor: pointer; }
+form button:hover { background: linear-gradient(90deg, #b92b27, #b92b27); border: none; color: #fff; cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */
