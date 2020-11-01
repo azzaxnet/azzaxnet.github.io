@@ -61,7 +61,9 @@ nav ul li a:hover { color: #b92b27; }
 
 .case-studies a:hover { background: rgba(0, 0, 0, 0.02); }
 
-.about { padding: 2rem 6rem; }
+.about { padding: 2rem 6rem; display: flex; flex-direction: column; align-items: center; }
+
+.about img { border-radius: 50%; object-fit: cover; height: 25vw; width: 25vw; padding: 2rem; }
 
 @media only screen and (max-width: 60em) { .about { padding: 1rem 0; } }
 
