@@ -21,7 +21,7 @@ strong { font-weight: 700; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; } }
 
-body { font-family: 'Inter', sans-serif; font-size: 16px; display: flex; flex-direction: column; padding: 0 8vw; color: rgba(0, 0, 0, 0.95); }
+body { font-family: 'Inter', sans-serif; font-size: 16px; display: flex; flex-direction: column; padding: 0 8vw; color: rgba(0, 0, 0, 0.95); -webkit-font-smoothing: subpixel-antialiased; }
 
 @media only screen and (max-width: 60em) { body { padding: 0 18px; } }
 
@@ -39,15 +39,17 @@ hr { background: linear-gradient(90deg, #1565C0, #b92b27); height: 2px; width: 1
 
 @media only screen and (max-width: 60em) { .case-studies { flex-direction: column; } }
 
-.case-studies .case-study { text-decoration: none; color: inherit; flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 25vw; text-align: center; }
+.case-studies .case-study { text-decoration: none; color: inherit; flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 30vw; text-align: center; }
 
-.case-studies a { text-decoration: none; color: inherit; flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 4rem; transition: background .1s ease-in-out; }
+.case-studies a { text-decoration: none; color: inherit; flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; transition: background .1s ease-in-out; }
 
 .case-studies a:hover { background: rgba(0, 0, 0, 0.02); }
 
 .about { display: flex; flex-direction: row; align-items: center; }
 
 .about picture { border-radius: 50%; object-fit: cover; padding: 2rem; display: flex; justify-content: center; align-items: center; flex: 1; }
+
+@media only screen and (max-width: 60em) { .about picture { padding: 2rem 0; } }
 
 @media only screen and (max-width: 60em) { .about { flex-direction: column; } }
 
