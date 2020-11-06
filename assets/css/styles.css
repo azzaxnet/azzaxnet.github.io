@@ -1,14 +1,10 @@
-h1 { font-size: 8vh; line-height: 1.66; margin-bottom: 3vh; margin-top: 30vh; background: linear-gradient(90deg, #1565C0, #b92b27); -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: gradient 10s ease infinite; background-size: 200% 200%; }
+h1 { font-size: 8vh; font-weight: 800; line-height: 1.66; margin-bottom: 3vh; margin-top: 30vh; background: linear-gradient(90deg, #1565C0, #b92b27); -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: gradient 10s ease infinite; background-size: 200% 200%; }
 
-h2 { font-size: 2rem; margin-bottom: 0; padding-top: 11vh; }
+h2 { font-size: 2rem; font-weight: 700; margin-bottom: 0; padding-top: 11vh; }
 
-h3 { font-size: 1.6rem; }
+h3 { font-size: 1.6rem; font-weight: 600; }
 
-h4 { font-size: 1.4rem; margin-bottom: 0; }
-
-h4 + .images { margin-top: 1rem; }
-
-h4 + .images p { margin-top: 1rem; }
+h4 { font-size: 1.4rem; margin-bottom: 0; font-weight: 600; }
 
 p { color: rgba(0, 0, 0, 0.65); line-height: 1.66; }
 
@@ -43,15 +39,11 @@ hr { background: linear-gradient(90deg, #1565C0, #b92b27); height: 2px; width: 1
 
 @media only screen and (max-width: 60em) { .case-studies { flex-direction: column; } }
 
-.case-studies .case-study { text-decoration: none; color: inherit; flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 4rem; }
-
-@media only screen and (max-width: 60em) { .case-studies .case-study { padding: 2rem 0; } }
+.case-studies .case-study { text-decoration: none; color: inherit; flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 25vw; text-align: center; }
 
 .case-studies a { text-decoration: none; color: inherit; flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 4rem; transition: background .1s ease-in-out; }
 
 .case-studies a:hover { background: rgba(0, 0, 0, 0.02); }
-
-.case-studies p { text-align: center; }
 
 .about { display: flex; flex-direction: row; align-items: center; }
 
@@ -105,13 +97,13 @@ nav .hamburger-close { display: none; }
 
 nav #home-btn { text-decoration: none; font-weight: 800; font-size: 1.2rem; letter-spacing: 2px; background: linear-gradient(90deg, #1565C0, #b92b27); -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: gradient 10s ease infinite; background-size: 200% 200%; }
 
-nav .menu { display: none; justify-content: center; align-items: center; position: fixed; width: 100vw; height: 93vh; overflow: hidden; z-index: 1000; top: 7vh; bottom: 0; right: 0; left: 0; background: #fff; }
+nav .menu { display: none; justify-content: center; align-items: center; position: fixed; width: 100vw; height: 93vh; overflow: hidden; z-index: 1000; top: 10vh; bottom: 0; right: 0; left: 0; background: #fff; }
 
 nav .menu ul { list-style: none; padding-left: 0; text-align: center; }
 
 nav .menu ul li { padding: 1.5rem; }
 
-nav .menu ul li a { text-decoration: none; font-size: 3rem; font-weight: 600; color: rgba(0, 0, 0, 0.65); transition: color .1s ease-in-out; }
+nav .menu ul li a { text-decoration: none; font-size: 2.5rem; font-weight: 700; color: rgba(0, 0, 0, 0.65); transition: color .1s ease-in-out; }
 
 nav .menu ul li a:hover { color: #b92b27; }
 
