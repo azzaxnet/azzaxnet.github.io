@@ -69,6 +69,8 @@ hr { background: linear-gradient(90deg, #1565C0, #b92b27); height: 2px; width: 1
 
 .contact .contact-form ul li, .contact .contact-list ul li { list-style: none; line-height: 3; }
 
+.contact .contact-form ul svg, .contact .contact-list ul svg { margin-top: 1rem; }
+
 .images { display: flex; justify-content: center; flex-direction: column; }
 
 .images img, .images source { object-fit: cover; width: 100%; padding-bottom: 1rem; }
@@ -104,6 +106,8 @@ nav .menu { display: none; justify-content: center; align-items: center; positio
 nav .menu ul { list-style: none; padding-left: 0; text-align: center; }
 
 nav .menu ul li { padding: 1.5rem; }
+
+@media only screen and (max-width: 60em) { nav .menu ul li { padding: 1rem; } }
 
 nav .menu ul li a { text-decoration: none; font-size: 2.5rem; font-weight: 700; color: rgba(0, 0, 0, 0.65); transition: color .1s ease-in-out; }
 
