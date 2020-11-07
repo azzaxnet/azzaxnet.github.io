@@ -41,6 +41,8 @@ hr { background: linear-gradient(90deg, #1565C0, #b92b27); height: 2px; width: 1
 
 .case-studies .case-study { text-decoration: none; color: inherit; flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 30vw; text-align: center; }
 
+@media only screen and (max-width: 60em) { .case-studies .case-study { min-height: 90vw; } }
+
 .case-studies a { text-decoration: none; color: inherit; flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; transition: background .1s ease-in-out; }
 
 .case-studies a:hover { background: rgba(0, 0, 0, 0.02); }
@@ -85,6 +87,8 @@ footer a { white-space: pre; }
 
 form { display: flex; flex-direction: column; width: 100%; }
 
+form h3 { white-space: nowrap; }
+
 form label { color: rgba(0, 0, 0, 0.65); font-size: 0.8rem; }
 
 form input[type=text], form input[type=email], form textarea { font-family: 'Inter', sans-serif; color: rgba(0, 0, 0, 0.35); border: none; border-bottom: 1px solid rgba(0, 0, 0, 0.05); font-size: 1rem; line-height: 2rem; margin: 1rem; margin-left: 0; transition: all .2s ease-in-out; }
@@ -98,6 +102,8 @@ form button:hover { background: linear-gradient(90deg, #b92b27, #b92b27); border
 nav { position: fixed; width: 82vw; height: 10vh; display: flex; flex-direction: row; justify-content: space-between; align-items: center; background: #fff; top: 0; padding: .3rem; }
 
 nav .hamburger-close { display: none; }
+
+nav .hamburger, nav .hamburger-close { cursor: pointer; }
 
 nav #home-btn { text-decoration: none; font-weight: 800; font-size: 1.2rem; letter-spacing: 2px; background: linear-gradient(90deg, #1565C0, #b92b27); -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: gradient 10s ease infinite; background-size: 200% 200%; }
 
