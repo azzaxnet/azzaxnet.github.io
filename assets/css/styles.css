@@ -1,8 +1,10 @@
-h1 { font-size: 8vh; font-weight: 800; line-height: 1.66; margin-bottom: 3vh; margin-top: 30vh; background: linear-gradient(90deg, #1565C0, #b92b27); -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: gradient 10s ease infinite; background-size: 200% 200%; }
+h1 { font-size: 8vh; font-weight: 800; line-height: 1.66; margin-bottom: 3vh; margin-top: 30vh; color: rgba(0, 0, 0, 0.95); background: linear-gradient(90deg, #1565C0, #b92b27); -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: gradient 10s ease infinite; background-size: 200% 200%; }
 
 h2 { font-size: 2rem; font-weight: 700; margin-bottom: 0; padding-top: 11vh; }
 
-h3 { font-size: 1.6rem; font-weight: 600; }
+h3 { font-size: 1.4rem; font-weight: 600; }
+
+@media only screen and (max-width: 576px) { h3 { font-size: 1.2rem; } }
 
 h4 { font-size: 1.4rem; margin-bottom: 0; font-weight: 600; }
 
@@ -23,11 +25,11 @@ strong { font-weight: 700; }
 
 body { font-family: 'Inter', sans-serif; font-size: 16px; display: flex; flex-direction: column; padding: 0 8vw; color: rgba(0, 0, 0, 0.95); -webkit-font-smoothing: subpixel-antialiased; }
 
-@media only screen and (max-width: 60em) { body { padding: 0 18px; } }
+@media only screen and (max-width: 576px) { body { padding: 0 18px; } }
 
-header { width: 70%; }
+header { width: 60%; }
 
-@media only screen and (max-width: 60em) { header { width: 100%; } }
+@media only screen and (max-width: 576px) { header { width: 100%; } }
 
 header h3 { color: rgba(0, 0, 0, 0.65); letter-spacing: 1px; font-weight: 400; line-height: 166%; padding-bottom: 10vh; }
 
@@ -37,11 +39,11 @@ hr { background: linear-gradient(90deg, #1565C0, #b92b27); height: 2px; width: 1
 
 .case-studies { flex-direction: row; display: flex; }
 
-@media only screen and (max-width: 60em) { .case-studies { flex-direction: column; } }
+@media only screen and (max-width: 576px) { .case-studies { flex-direction: column; } }
 
 .case-studies .case-study { text-decoration: none; color: inherit; flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 30vw; text-align: center; }
 
-@media only screen and (max-width: 60em) { .case-studies .case-study { min-height: 90vw; } }
+@media only screen and (max-width: 576px) { .case-studies .case-study { min-height: 90vw; } }
 
 .case-studies a { text-decoration: none; color: inherit; flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; transition: background .1s ease-in-out; }
 
@@ -51,21 +53,21 @@ hr { background: linear-gradient(90deg, #1565C0, #b92b27); height: 2px; width: 1
 
 .about picture { border-radius: 50%; object-fit: cover; padding: 2rem; display: flex; justify-content: center; align-items: center; flex: 1; }
 
-@media only screen and (max-width: 60em) { .about picture { padding: 2rem 0; } }
+@media only screen and (max-width: 576px) { .about picture { padding: 2rem 0; } }
 
-@media only screen and (max-width: 60em) { .about { flex-direction: column; } }
+@media only screen and (max-width: 576px) { .about { flex-direction: column; } }
 
 .about .text { flex: 2; padding: 2rem; }
 
-@media only screen and (max-width: 60em) { .about .text { padding: 0 2rem 0 0; } }
+@media only screen and (max-width: 576px) { .about .text { padding: 0 2rem 0 0; } }
 
 .contact { flex-direction: row; display: flex; }
 
-@media only screen and (max-width: 60em) { .contact { flex-direction: column; } }
+@media only screen and (max-width: 576px) { .contact { flex-direction: column; } }
 
 .contact .contact-form, .contact .contact-list { flex: 1; display: flex; justify-content: top; align-items: center; flex-direction: column; padding: 4rem; }
 
-@media only screen and (max-width: 60em) { .contact .contact-form, .contact .contact-list { padding: 2rem 0; } }
+@media only screen and (max-width: 576px) { .contact .contact-form, .contact .contact-list { padding: 2rem 0; } }
 
 .contact .contact-form ul, .contact .contact-list ul { padding-left: 0; }
 
@@ -83,7 +85,7 @@ footer { color: rgba(0, 0, 0, 0.35); padding: 5vh 8vw; text-align: center; }
 
 footer a { white-space: pre; }
 
-@media only screen and (max-width: 60em) { footer { padding: 5vh 0; } }
+@media only screen and (max-width: 576px) { footer { padding: 5vh 0; } }
 
 form { display: flex; flex-direction: column; width: 100%; }
 
@@ -93,13 +95,15 @@ form label { color: rgba(0, 0, 0, 0.65); font-size: 0.8rem; }
 
 form input[type=text], form input[type=email], form textarea { font-family: 'Inter', sans-serif; color: rgba(0, 0, 0, 0.35); border: none; border-bottom: 1px solid rgba(0, 0, 0, 0.05); font-size: 1rem; line-height: 2rem; margin: 1rem; margin-left: 0; transition: all .2s ease-in-out; }
 
-form input[type=text]:focus, form input[type=email]:focus, form textarea:focus { color: rgba(0, 0, 0, 0.95); border: none; border-bottom: 1px solid rgba(0, 0, 0, 0.65); }
+form input[type=text]:focus, form input[type=email]:focus, form textarea:focus { color: rgba(0, 0, 0, 0.95); outline: none; border: none; border-bottom: 1px solid rgba(0, 0, 0, 0.65); }
 
 form button { color: #fff; background: #1565C0; background: linear-gradient(90deg, #1565C0, #b92b27); font-size: 1rem; line-height: 1.5rem; padding: 0.75rem 1.15rem; border: none; border-radius: 3px; width: 40%; align-self: center; transition: background 2s ease-in-out; animation: gradient 10s ease infinite; background-size: 200% 200%; }
 
 form button:hover { background: linear-gradient(90deg, #b92b27, #b92b27); border: none; color: #fff; cursor: pointer; }
 
-nav { position: fixed; width: 82vw; height: 10vh; display: flex; flex-direction: row; justify-content: space-between; align-items: center; background: #fff; top: 0; padding: .3rem; }
+nav { position: fixed; width: 84vw; height: 10vh; display: flex; flex-direction: row; justify-content: space-between; align-items: center; background: #fff; top: 0; padding: .3rem; }
+
+@media only screen and (max-width: 576px) { nav { width: calc(100% - 36px); } }
 
 nav .hamburger-close { display: none; }
 
@@ -113,7 +117,7 @@ nav .menu ul { list-style: none; padding-left: 0; text-align: center; }
 
 nav .menu ul li { padding: 1.5rem; }
 
-@media only screen and (max-width: 60em) { nav .menu ul li { padding: 1rem; } }
+@media only screen and (max-width: 576px) { nav .menu ul li { padding: 1rem; } }
 
 nav .menu ul li a { text-decoration: none; font-size: 2.5rem; font-weight: 700; color: rgba(0, 0, 0, 0.65); transition: color .1s ease-in-out; }
 
