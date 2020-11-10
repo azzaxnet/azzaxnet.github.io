@@ -51,7 +51,7 @@ hr { color: rgba(0, 0, 0, 0.45); width: 100%; }
 
 .case-studies a:hover { background: rgba(0, 0, 0, 0.02); }
 
-.case-studies .coming-soon { color: rgba(0, 0, 0, 0.05); }
+.case-studies .coming-soon { color: rgba(0, 0, 0, 0.25); }
 
 .about { display: flex; flex-direction: row; align-items: center; }
 
