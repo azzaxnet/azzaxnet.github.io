@@ -12,7 +12,7 @@ h4 { font-size: 1.4rem; margin-bottom: 0; font-weight: 600; }
 
 p { color: rgba(0, 0, 0, 0.65); line-height: 1.66; }
 
-a { color: #1565C0; transition: all .1s ease-in-out; text-decoration: none; border-bottom: 1px solid rgba(0, 0, 0, 0.8); padding-bottom: 1px; }
+a { color: #1565C0; transition: all .1s ease-in-out; text-decoration: none; border-bottom: 1px solid #1565C0; padding-bottom: 1px; }
 
 a:hover { color: rgba(0, 0, 0, 0.8); padding-bottom: 3px; border-bottom: 2px solid rgba(0, 0, 0, 0.8); }
 
@@ -53,7 +53,7 @@ hr { color: rgba(0, 0, 0, 0.45); width: 100%; }
 
 .case-studies a:hover { background: rgba(0, 0, 0, 0.02); }
 
-.case-studies .coming-soon { color: rgba(0, 0, 0, 0.45); }
+.case-studies .coming-soon { color: rgba(0, 0, 0, 0.05); }
 
 .about { display: flex; flex-direction: row; align-items: center; }
 
