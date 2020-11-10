@@ -53,6 +53,8 @@ hr { color: rgba(0, 0, 0, 0.45); width: 100%; }
 
 .case-studies a:hover { background: rgba(0, 0, 0, 0.02); }
 
+.case-studies .coming-soon { color: rgba(0, 0, 0, 0.45); }
+
 .about { display: flex; flex-direction: row; align-items: center; }
 
 .about picture { border-radius: 50%; object-fit: cover; padding: 2rem; display: flex; justify-content: center; align-items: center; flex: 1; }
@@ -127,6 +129,6 @@ nav .menu ul li { padding: 1.5rem; }
 
 nav .menu ul li a { text-decoration: none; font-size: 2.5rem; font-weight: 700; color: rgba(0, 0, 0, 0.65); transition: all .1s ease-in-out; border: none; }
 
-nav .menu ul li a:hover { color: #1565C0; border-bottom: 2px solid #1565C0; }
+nav .menu ul li a:hover { color: rgba(0, 0, 0, 0.8); border-bottom: 2px solid rgba(0, 0, 0, 0.8); }
 
 /*# sourceMappingURL=styles.css.map */
