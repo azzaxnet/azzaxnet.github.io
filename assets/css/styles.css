@@ -43,15 +43,35 @@ hr { color: rgba(0, 0, 0, 0.45); width: 100%; }
 
 @media only screen and (max-width: 576px) { .case-studies { flex-direction: column; } }
 
-.case-studies .case-study { text-decoration: none; color: inherit; flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 30vw; text-align: center; }
+.case-studies .case-study { text-decoration: none; color: inherit; flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 30vw; text-align: center; position: relative; margin-bottom: 2rem; }
 
 @media only screen and (max-width: 576px) { .case-studies .case-study { min-height: 90vw; } }
 
-.case-studies a { text-decoration: none; color: inherit; flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; transition: background .1s ease-in-out; border: none; }
+.case-studies a { text-decoration: none; color: inherit; flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; transition: all .1s ease-in-out; border-bottom: none; position: relative; }
 
-.case-studies a:hover { background: rgba(0, 0, 0, 0.02); }
+.case-studies a:hover { background: rgba(0, 0, 0, 0.2); color: #fff; }
 
-.case-studies .coming-soon { color: rgba(0, 0, 0, 0.2); }
+.case-studies a:hover p { color: #fff; }
+
+.case-studies a:hover button { background: #fff; color: rgba(0, 0, 0, 0.8); box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12); }
+
+.case-studies .coming-soon { color: rgba(0, 0, 0, 0.45); }
+
+.case-studies button { color: #fff; background: rgba(0, 0, 0, 0.8); font-size: 0.9rem; line-height: 1.2rem; padding: 0.6rem 2rem; border: 1px solid rgba(0, 0, 0, 0.8); border-radius: 3px; width: auto; align-self: center; transition: all .1s ease-in-out; }
+
+.case-studies button:hover { background: rgba(0, 0, 0, 0.8); color: #fff; cursor: pointer; }
+
+.case-studies #cc-ux-buddies { background: none; }
+
+.case-studies #cc-ux-buddies:hover { background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.8)), url("/assets/images/Ux-buddies-sprint-small-min.jpg"); background-size: cover; background-blend-mode: darken; }
+
+.case-studies #cc-irish-radios { background: none; }
+
+.case-studies #cc-irish-radios:hover { background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.8)), url("/assets/images/Irish-radios-high-fidelity-small-min.jpg"); background-size: cover; background-blend-mode: darken; }
+
+.case-studies #cc-brandon-f { background: none; }
+
+.case-studies #cc-brandon-f:hover { background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.8)), url("/assets/images/Brandon-f-high-fidelity-small-min.jpg"); background-size: cover; background-blend-mode: darken; }
 
 .about { display: flex; flex-direction: row; align-items: center; }
 
@@ -64,6 +84,14 @@ hr { color: rgba(0, 0, 0, 0.45); width: 100%; }
 .about .text { flex: 2; padding: 2rem; }
 
 @media only screen and (max-width: 576px) { .about .text { padding: 0 2rem 0 0; } }
+
+.about .buttons { display: flex; flex-direction: row; }
+
+@media only screen and (max-width: 576px) { .about .buttons { flex-direction: column; } }
+
+.about .buttons a { color: #fff; background: rgba(0, 0, 0, 0.8); font-size: 0.9rem; line-height: 1.2rem; padding: 0.6rem 2rem; margin: 1rem 2rem 1rem 0; border: 1px solid rgba(0, 0, 0, 0.8); border-radius: 3px; width: auto; align-self: center; transition: all .1s ease-in-out; }
+
+.about .buttons a:hover { background: #fff; color: rgba(0, 0, 0, 0.8); border: 1px solid rgba(0, 0, 0, 0.8); cursor: pointer; box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12); }
 
 .contact { flex-direction: row; display: flex; }
 
@@ -97,7 +125,7 @@ form h3 { white-space: nowrap; }
 
 form label { color: rgba(0, 0, 0, 0.65); font-size: 0.8rem; }
 
-form input[type=text], form input[type=email], form textarea { font-family: 'Inter', sans-serif; color: rgba(0, 0, 0, 0.45); border: none; border-bottom: 1px solid rgba(0, 0, 0, 0.05); font-size: 1rem; line-height: 2rem; margin: 1rem; margin-left: 0; transition: all .2s ease-in-out; }
+form input[type=text], form input[type=email], form textarea { font-family: 'Inter', sans-serif; color: rgba(0, 0, 0, 0.65); border: none; border-bottom: 1px solid rgba(0, 0, 0, 0.2); font-size: 1rem; line-height: 2rem; margin: 0.5rem 0 2rem 0; margin-left: 0; transition: all .2s ease-in-out; }
 
 form input[type=text]:focus, form input[type=email]:focus, form textarea:focus { color: rgba(0, 0, 0, 0.8); outline: none; border: none; border-bottom: 1px solid rgba(0, 0, 0, 0.65); }
 
@@ -105,7 +133,7 @@ form button { color: #fff; background: rgba(0, 0, 0, 0.8); font-size: 1rem; line
 
 form button:hover { background: #fff; color: rgba(0, 0, 0, 0.8); cursor: pointer; }
 
-nav { position: fixed; width: 84vw; height: 10vh; display: flex; flex-direction: row; justify-content: space-between; align-items: center; background: #fff; top: 0; padding: .3rem; }
+nav { position: fixed; width: 84vw; height: 10vh; display: flex; flex-direction: row; justify-content: space-between; align-items: center; background: white; top: 0; padding: .3rem; z-index: 100; }
 
 @media only screen and (max-width: 576px) { nav { width: calc(100% - 36px); } }
 
