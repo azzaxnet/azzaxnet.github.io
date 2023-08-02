@@ -131,4 +131,8 @@ nav .menu ul li a:hover { color: rgba(0, 0, 0, 0.8); border-bottom: 2px solid rg
 
 @media only screen and (max-width: 576px) { nav .menu ul li a { font-size: 1.7rem; } }
 
+ul li { line-height: 1.66rem; color: rgba(0, 0, 0, 0.65); margin-bottom: .5rem; }
+
+strong { color: black;}
+
 /*# sourceMappingURL=styles.css.map */
