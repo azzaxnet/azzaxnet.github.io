@@ -49,9 +49,11 @@ hr { color: rgba(0, 0, 0, 0.45); width: 100%; }
 
 .case-studies a { text-decoration: none; color: inherit; flex: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; transition: background .1s ease-in-out; border: none; }
 
-.case-studies a:hover { background: rgba(0, 0, 0, 0.02); }
+.case-studies a:hover { background: rgba(0, 0, 0, 0.02); border-radius: 0.5rem;}
 
 .case-studies .coming-soon { color: rgba(0, 0, 0, 0.2); }
+
+.case-study picture { width: 50%; }
 
 .about { display: flex; flex-direction: column; align-items: center; }
 
