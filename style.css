@@ -6,7 +6,7 @@ html {
 	background-color: #FFFFFF;
 	background-image: url(/images/mobile-background.png);
 	background-repeat: no-repeat;
-	background-size: auto 120vh;
+	background-size: auto 105vh;
 	background-position: right 0 top 0;
 }
 @media only screen and (max-width: 900px){
