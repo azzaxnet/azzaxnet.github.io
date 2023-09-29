@@ -1,170 +1,142 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="description" content="Portfolio of Håkan Nilsson, UX/UI designer">
-    <meta name="keywords" content="portfolio, UX, UI, designer, design, user experience, user interface">
-    <meta name="viewport" content="initial-scale=1.0">
-    <title>Håkan Nilsson | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-      
-  </head>
-  <body>
-      <nav>
-        <a href="index.html" id="home-btn">HÅKAN</a>
-        <div class="hamburger">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#0d0d0d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <line x1="4" y1="8" x2="20" y2="8" />
-              <line x1="8" y1="16" x2="20" y2="16" />
-            </svg>
-        </div>
-        <div class="hamburger-close">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#0d0d0d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <line x1="18" y1="6" x2="6" y2="18" />
-                <line x1="6" y1="6" x2="18" y2="18" />
-            </svg>  
-        </div>
-        <div class="menu">
-            <ul>
-                <li id="link-home"><a href="index.html">Home</a></li>
-                <li id="link-case-studies"><a href="index.html#case-studies">Case studies</a></li>
-                <li id="link-about"><a href="index.html#about">About</a></li>
-                <li id="link-contact"><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </div>
-      </nav>
-    <header>
-    <h1>Hej, &#128075; I’m Håkan.</h1> 
-    <h3>I’m an enthusiastic UX/UI designer who works with passion to make your product better and timeless.</h3>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Håkan Nilsson Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+</head>
 
-<main>
-    <h2 id="case-studies">Case studies</h2>
-    <hr />
-
-<div class="case-studies">
-    <a href="ux-buddies-case-study">
-        <div class="case-study">
-			<picture class="images">
-				<source srcset="/assets/images/Ux-buddies-thumbnail.png" media="(max-width: 576px)" />
-				<source srcset="/assets/images/Ux-buddies-thumbnail.png" />
-				<img src="/assets/images/Ux-buddies-thumbnail.png" alt="UX Buddies research project" />
-			</picture>
-            <h3>UX Buddies</h3>
-            <p>Research project for a new UX design service</p>
-        </div>
-    </a>
-    <a href="mobilix-case-study">
-        <div class="case-study">
-			<picture class="images">
-				<source srcset="/assets/images/mobilix-thumbnail.png" media="(max-width: 576px)" />
-				<source srcset="/assets/images/mobilix-thumbnail.png" />
-				<img src="/assets/images/mobilix-thumbnail.png" alt="Mobilix thumbnail" />
-    		</picture>
-            <h3>Mobilix</h3>
-            <p>Design of public transport managment application</p>
-        </div>
-    </a>    
-</div>
-<div class="case-studies">
-    <a href="irish-radio-case-study">
-        <div class="case-study">
-			<picture class="images">
-				<source srcset="/assets/images/irishradio-thumbnail.png" media="(max-width: 576px)" />
-				<source srcset="/assets/images/irishradio-thumbnail.png" />
-				<img src="/assets/images/irishradio-thumbnail.png" alt="Irish radio thumbnail" />
-    		</picture>
-            <h3>Irish Radios</h3>
-            <p>Redesign of a radio App</p>
-        </div>
-    </a>
-	<a href="viu-manager-case-study">
-		<div class="case-study">
-			<picture class="images">
-				<source srcset="/assets/images/viumanager-thumbnail.png" media="(max-width: 576px)" />
-				<source srcset="/assets/images/viumanager-thumbnail.png" />
-				<img src="/assets/images/viumanager-thumbnail.png" alt="Viu Manager thumbnail" />
-    		</picture>
-			<h3>ViuManager</h3>
-			<p>Designing a display manager from start to finish</p>
+<body id="index">
+	<nav>
+		<a href="index.html">
+			<div class="home">
+				<h5>Håkan Nilsson</h5>
+				<p class="small">UX/UI Designer</p>
+			</div>
+		</a>
+		<div class="btn-group">
+			<a href="#about" class="button">About Me</a>
+			<a href="#portfolio" class="button">Portfolio</a>
+			<a href="mailto:h.n.j.nilsson@gmail.com" class="button cta">Contact Me</a>
 		</div>
-	</a>
-</div>
+	</nav>
+	<main>
+		<div id="landing">
+			<div class="text">
+				<h2>Hej 👋</h2>
+				<h1>I’m Håkan Nilsson</h1>
+				<p>I'm a Swedish UX/UI enthusiast, passionate about great user experience – My expertise makes it happen, even from afar.</p>
+				<div class="btn-group">
+					<a href="#" class="button">Portfolio</a>
+					<a href="#" class="button">About Me</a>
+					<a href="#" class="button">Download My CV</a>
+				</div>
+			</div>
+		</div>
+		<div id="portfolio">
+			<h3>Portfolio</h3>
+			<div class="portfolio-cards">
+				<a href="mobilix-case-study.html">
+					<div class="portfolio-card">
+						<div class="img-container">
+							<img src="images/mobilix-thumbnail.png" alt="Mobilix UX/UI Design Case Thumbnail">
+						</div>
+						<div class="text">
+							<h4>Displaying Complex Data</h4>
+							<p class="small">UX/UI design case</p>
+						</div>
+					</div>
+				</a>
+				<a href="panasonic-case-study.html">
+					<div class="portfolio-card">
+						<div class="img-container">
+							<img src="images/panasonic-thumbnail.png" alt="Panasonic UX/UI Design Case Thumbnail">
+						</div>
+						<div class="text">
+							<h4>Helping Panasonic Save Lives</h4>
+							<p class="small">UX/UI design case</p>
+						</div>
+					</div>
+				</a>
+				<a href="tenantviu-case-study.html">
+					<div class="portfolio-card">
+						<div class="img-container">
+							<img src="images/tenantviu-thumbnail.png" alt="TenantViu UX/UI Design Case Thumbnail">
+						</div>
+						<div class="text">
+							<h4>Presenting Tenant Information</h4>
+							<p class="small">UX/UI design case</p>
+						</div>
+					</div>
+				</a>
+				<a href="viumanager-case-study.html">
+					<div class="portfolio-card">
+						<div class="img-container">
+							<img src="images/viumanager-thumbnail.png" alt="ViuManager UX/UI Design Case Thumbnail">
+						</div>
+						<div class="text">
+							<h4>Managing Digital Displays</h4>
+							<p class="small">UX/UI design case</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div id="gallery">
+			<h4>UI Gallery</h4>
+		</div>
+		<div id="testimonial">
+			<div>
+				<p>"Working remotely is not a problem for Håkan; he is an excellent UX and UI designer. Although living in Spain, working with our team at All Binary in Sweden has been smooth and efficient.</p>
 
-<h2 id="about">About me</h2>
+				<p>Håkan has an excellent eye for user-centered Desktop and Mobile applications. He has organized and structured our current system applications, implementing redesign and enhancements with his skills in UX/UI. Håkan has also been involved in designing brand new Desktop and Mobile applications from idea to finished product. Håkan is able to create seamless user experiences between Web or Mobile platforms.</p>
 
-<hr />
+				<p>Working with Håkan is easy. He has a good sense of humor and brings great ideas to the table and is not afraid to speak his mind when it comes to enhancing the user experience. Håkan is hard-working, focused on delivering without nudging on quality. I would highly recommend Håkan as a UX/UI designer."</p>
+			</div>
+			<div class="avatar">
+				<img src="images/eva-johnston.png" alt="Eva Johnston Profile Picture">
+				<div class="text">
+					<p>Eva Johnston</p>
+					<p class="small">All Binary</p>
+				</div>
+			</div>
+		</div>
+		<div id="about">
+			<div class="about-header">
+				<h6>About Me</h6>
+				<h3>This is Håkan!</h3>
+			</div>
+			<div class="about-wrapper">
+				<div>
+					<p>👋 I'm Håkan Nilsson, your friendly Swedish UX/UI designer based in the picturesque Basque Country, Spain. With over three years of crafting digital experiences, I'm all about making your online journey smoother and more delightful.</p>
+					
+					<p>🇸🇪 My roots may be Swedish, but my work knows no borders. I've honed my skills over a decade as a remote worker, proving that distance is no match for dedication. I'm like a Swedish clock—humble, well-organized, and always curious to learn and explore</p>
+					
+					<p>🌍 When I'm not immersed in user needs, pixels and interfaces, I'm exploring far and wide or enjoying quality time with my family. Oh, and did I mention I'm an avid runner? Because, let's face it, running is the best way to chase those creative ideas</p>
 
-<div class="about">
-    <picture class="images">
-        <source srcset="/assets/images/hnilsson-profile-picture-small-min.png" media="(max-width: 576px)" />
-        <source srcset="/assets/images/hnilsson-profile-picture-large-min.png" />
-        <img src="/assets/images/hnilsson-profile-picture-large-min.png" alt="Håkan Nilsson's profile picture" />
-    </picture>
-    <div class="text">
-        <h3>Hej!</h3>
-        <p> Are you looking for a highly skilled UX/UI designer with several years of experience in creating beautiful, seamless and user-friendly digital products? Look no further! My passion lies in shaping the future of digital experiences through creativity, analytical thinking, and a keen eye for detail.</p>
-		<p>Nestled in the beauty of Spain and rooted in the design ethos of Sweden, I uniquely embody a fusion of cultures in my role as an accomplished UX/UI designer. With a wealth of experience amassed over years of successful remote work, I've proven that distance is no obstacle to delivering excellence. This journey reflects not only my design prowess but also my knack for seamlessly connecting with teams across borders. As a dedicated creator of user-centered digital experiences, I've discovered that true innovation transcends geographical constraints. I eagerly anticipate further shaping the remote design landscape with my passion and expertise.</p>
-		<p>With a diverse background spanning various fields, I have found my true calling in design. Over the years, I've honed my expertise in UX/UI design, delivering cutting-edge solutions that engage and inspire users. I thrive in collaborative environments, seamlessly working with developers, product managers, and stakeholders to bring visions to life.
-		</p>
-		<h4>What sets me apart?</h4>
-		<ul>
-			<li><strong>Extensive UX/UI Experience:</strong> With several years of hands-on experience, I have mastered the art of crafting user-centered Desktop and Mobile applications. From organizing and restructuring existing systems to designing brand new applications from scratch, I bring a wealth of expertise to every project.</li>
-			<li><strong>Seamless User Experience:</strong> Whether it's on the web or mobile platforms, I ensure a seamless user experience that leaves a lasting impression on your audience. Your users' satisfaction is my top priority.</li>
-			<li><strong>Remote Work Efficiency:</strong> Distance is not a problem for me! I am an excellent UX/UI designer with a proven track record of working effectively with global teams. Collaboration knows no bounds with me on your side.</li>
-		</ul>
-		<h4>What Others Say:</h4>
-		<p>"Working remotely is not a problem for Håkan; he is an excellent UX and UI designer. Although living in Spain, working with our team at All Binary in Sweden has been smooth and efficient.</p>
-		<p>Håkan has an excellent eye for user-centered Desktop and Mobile applications. He has organized and structured our current system applications, implementing redesign and enhancements with his skills in UX/UI. Håkan has also been involved in designing brand new Desktop and Mobile applications from idea to finished product. Håkan is able to create seamless user experiences between Web or Mobile platforms.</p>
-		<p>Working with Håkan is easy. He has a good sense of humor and brings great ideas to the table and is not afraid to speak his mind when it comes to enhancing the user experience. Håkan is hard-working, focused on delivering without nudging on quality. I would highly recommend Håkan as a UX/UI designer." - Team at All Binary, Sweden.</p>
-		<p>If you're ready to elevate your digital products to new heights, let's collaborate and shape the future of digital experiences together! Reach out to me for inquiries, collaborations, or to view my portfolio. Remember, exceptional design can transform your digital world!</p>
-        <p>Download my <a href="/assets/images/hakan-nilsson-CV.pdf" target="_blank">CV</a> or find me on <a href="https://www.linkedin.com/in/h%C3%A5kan-nilsson-8aaa24199/" target="_blank">LinkedIn</a></p>
-    </div>
-</div>
-
-<h2 id="contact">Contact me</h2>
-<hr />
-
-<div class="contact">
-    <div class="contact-list">
-        <h3>Contact info</h3>
-        <ul>
-            <li>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-at" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#0d0d0d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <circle cx="12" cy="12" r="4" />
-                    <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
-                </svg> | Email: <a href="mailto:h.n.j.nilsson@gmail.com">h.n.j.nilsson@gmail.com</a>
-            </li>
-            <li>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#0d0d0d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <circle cx="12" cy="11" r="3" />
-                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                </svg> | Location: Mondragón, Gipuzcoa, Spain
-            </li>
-            <li>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#0d0d0d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <rect x="7" y="4" width="10" height="16" rx="1" />
-                    <line x1="11" y1="5" x2="13" y2="5" />
-                    <line x1="12" y1="17" x2="12" y2="17.01" />
-                </svg> | Phone: +34 677 89 43 01
-            </li>
-        </ul>
-    </div>
-</div>
-</main>
-
-
-      <footer>
-        Design and developed with lots of love and hot chocolate by <a href="mailto:h.n.j.nilsson@gmail.com">Håkan Nilsson</a>.
-    </footer>
-    <script src="/assets/js/lib/jquery.js"></script>
-    <script src="/assets/js/main.js"></script>
-  </body>
+					<p>🧑🏽‍💻 So, whether it's revamping your user experience, running with new concepts, or simply sharing travel stories, I'm here for it. Let's create, connect, and make digital magic happen!</p>
+				</div>
+				<div class="about-aside">
+					<img src="images/hakan-nilsson.png" alt="Håkan Nilsson Profile Picture">
+					<div class="btn-group">
+						<div class="horizontal">
+							<a href="/images/hakan-nilsson-cv.pdf" class="button" target="_blank">Download My CV</a>
+							<a href="https://www.linkedin.com/in/h%C3%A5kan-nilsson-8aaa24199/" class="button" target="_blank">LinkedIn</a>
+						</div>
+						<a href="mailto:h.n.j.nilsson@gmail.com" class="button cta">Contact Me</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p class="small">Designed and developed with lots of ❤️️ by Håkan Nilsson. I don’t collect your data, but I always appreciate a nice 🍪.</p>
+	</footer>
+	<script src=""></script>
+</body>
 </html>
